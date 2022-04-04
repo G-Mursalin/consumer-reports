@@ -2,7 +2,7 @@
 
 Live website link: [https://consumer-reports.netlify.app/](https://consumer-reports.netlify.app/)
 
-## About The Website
+## About This Website
 
 - For seeing customers reviews
 - For selling the best products
