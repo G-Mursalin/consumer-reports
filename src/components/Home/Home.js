@@ -1,10 +1,6 @@
 import React from "react";
-import { useState } from "react";
-// Custom Hook
-import useFetch from "../../hook/useFetch";
+
 const Home = () => {
-  // const [data, setData] = useFetch("");
-  // console.log(data);
   return (
     <React.Fragment>
       <section className="text-gray-600 body-font ">
