@@ -1,6 +1,13 @@
 import React from "react";
-
+// Custom Hook
+import useFetch from "../../hook/useFetch";
+// Components
+import ShowReviews from "../ShowReviews/ShowReviews";
+// Routing
+import { Link } from "react-router-dom";
 const Home = () => {
+  // Fetching Data
+  const [reviewData, setReviewData] = useFetch("reviewsData.json");
   return (
     <React.Fragment>
       <section className="text-gray-600 body-font ">
@@ -33,6 +40,17 @@ const Home = () => {
               src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&h=600"
             />
           </div>
+        </div>
+      </section>
+      <section className="py-12">
+        <h1 className="text-center text-3xl font-bold">Customer Reviews(3)</h1>
+        <ShowReviews reviews={reviewData.slice(0, 3)} />
+        <div className="text-center -mt-12 ">
+          <Link to="/reviews">
+            <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg ">
+              See All Reviews
+            </button>
+          </Link>
         </div>
       </section>
     </React.Fragment>
