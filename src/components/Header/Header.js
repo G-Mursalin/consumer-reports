@@ -3,7 +3,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
-    <div>
+    <React.Fragment>
       <header className="text-gray-600 body-font  bg-green-500   container mx-auto">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <div className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -68,7 +68,7 @@ const Header = () => {
           </nav>
         </div>
       </header>
-    </div>
+    </React.Fragment>
   );
 };
 
