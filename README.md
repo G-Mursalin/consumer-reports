@@ -7,4 +7,4 @@ Live website link: [https://consumer-reports.netlify.app/](https://consumer-repo
 - For seeing customers reviews
 - For selling the best products
 - Analyzing data that might help you
-- For grow your business
+- For growing your business

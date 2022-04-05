@@ -19,7 +19,7 @@ const Blogs = () => {
       </div>
       <div className="my-3">
         <h1 className="text-3xl font-bold text-green-500">
-          What is semantic tag?
+          What is semantic tag in HTML?
         </h1>
         <p className="mt-5">
           HTML5 provides new semantic elements. Elements with a meaningful name

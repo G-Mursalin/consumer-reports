@@ -8,7 +8,14 @@ const Reviews = () => {
   // Fetching Data
   const [reviewData, setReviewData] = useFetch("reviewsData.json");
 
-  return <ShowReviews reviews={reviewData} />;
+  return (
+    <React.Fragment>
+      <h1 className="text-center text-3xl font-bold mt-5">
+        What out customers says!
+      </h1>
+      <ShowReviews reviews={reviewData} />
+    </React.Fragment>
+  );
 };
 
 export default Reviews;
